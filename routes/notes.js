@@ -1,10 +1,10 @@
 const am = require("express").Router();
-const { read, readAppend } = require("../assets/helper/fshelper");
+const { read, readAppend } = require("../public/assets/helper/fshelper");
 
 am.get("/", (req, res) => {
   console.info(`${req.method} has been made for notes`);
 
-  read(".../db/db.json").then((data) => res.json(JSON.parse(data)));
+  read("./db/db.json").then((data) => res.json(JSON.parse(data)));
 });
 
 am.post("/", (req, res) => {
@@ -17,7 +17,7 @@ am.post("/", (req, res) => {
       title,
       text,
     };
-    readAppend(newNote, ".../db/db.json");
+    readAppend(newNote, "./db/db.json");
     const response = {
       status: "added",
       body: newNote,
