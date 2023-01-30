@@ -1,5 +1,4 @@
 const am = require("express").Router();
-
 const { read, readAppend } = require("../assets/helper/fshelper");
 
 am.get("/", (req, res) => {
@@ -28,3 +27,5 @@ am.post("/", (req, res) => {
     res.json("can not add note at this time");
   }
 });
+
+module.exports = am;
