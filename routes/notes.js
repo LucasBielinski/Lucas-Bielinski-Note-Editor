@@ -1,5 +1,5 @@
 const am = require("express").Router();
-const { read, readAppend } = require("../public/assets/helper/fshelper");
+const { read, readAppend } = require("../helper/fshelper");
 
 am.get("/", (req, res) => {
   console.info(`${req.method} has been made for notes`);
