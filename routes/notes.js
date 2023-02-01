@@ -1,5 +1,6 @@
 const am = require("express").Router();
-const { read, readAppend } = require("../helper/fshelper");
+const { read, readAppend, writeTheFile } = require("../helper/fshelper");
+const newId = require("../helper/idhelper");
 
 am.get("/", (req, res) => {
   console.info(`${req.method} has been made for notes`);
@@ -16,6 +17,7 @@ am.post("/", (req, res) => {
     const newNote = {
       title,
       text,
+      id: newId(),
     };
     readAppend(newNote, "./db/db.json");
     const response = {
@@ -26,6 +28,14 @@ am.post("/", (req, res) => {
   } else {
     res.json("can not add note at this time");
   }
+});
+
+am.delete("/:id", (req, res) => {
+  console.info(`${req.method} a request for deletion has been made`);
+  read("./db/db.json")
+    .then((data) => JSON.parse(data).filter((id) => id.id !== req.params.id))
+    .then((data) => writeTheFile("./db/db.json", data));
+  res.json("successfully deleted");
 });
 
 module.exports = am;
