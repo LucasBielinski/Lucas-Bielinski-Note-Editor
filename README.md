@@ -1,4 +1,4 @@
-# Note Writer
+# Note Taker
 
 ## Description
 
