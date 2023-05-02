@@ -12,8 +12,6 @@ Express must be installed in order to run this project.
 ## Usage
 
 To run the server from your computer install express and type "npm start" to quit hit "ctrl and c". Write a note and hit the save button to save it to the site. Hit the trash icon to delete the note.
-![alt text](assets/images/screenshot.png)
-```
 
 ## Credits
 
@@ -25,6 +23,9 @@ N/A
 
 ## How to Contribute
 
-N/A
+For questions and contributions, you can reach me here:
+[Email](mailto:bielinskilucas@gmail.com)
+or
+[Github](https://github.com/LucasBielinski)
 
 
