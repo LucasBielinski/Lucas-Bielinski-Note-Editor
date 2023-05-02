@@ -2,16 +2,8 @@
 
 ## Description
 
-My motivation for this project was to learn more about routing with express. This was one of the more challenging projects due to oustside factors, however I was still able to learn a lot and overcome these challenges. I built this project as a way to keep track of notes written without having to use a pen and paper.
+My motivation for this project was to learn more about routing with express. This was one of the more challenging projects due to outside factors, however I was still able to learn a lot and overcome these challenges. I built this project as a way to keep track of notes written without having to use a pen and paper. I did this by adding a back-end to an existing front-end. 
 
-## Table of Contents (Optional)
-
-If your README is long, add a table of contents to make it easy for users to find what they need.
-
-- [Installation](#installation)
-- [Usage](#usage)
-- [Credits](#credits)
-- [License](#license)
 
 ## Installation
 
@@ -31,14 +23,8 @@ N/A
 
 N/A
 
-## Features
-
-N/A
-
 ## How to Contribute
 
 N/A
 
-## Tests
 
-N/A
